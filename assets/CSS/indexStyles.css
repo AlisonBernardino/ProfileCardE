@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+:root {
+  /* COLORS */
+  --basicWhiteColor: rgb(255, 255, 255);
+  --basicBlackColor: rgb(0, 0, 0);
+
+  /* GLASS EFECTS */
+  --basicGlassAEffect: rgb(255, 255, 255, 0.06);
+  --basicGlassBEffect: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background: url(https://i.postimg.cc/C5Y74Vhw/background.png) no-repeat center
+    center fixed;
+  background-size: cover;
+}
+
+.contentArea {
+  margin: 30px 20px 30px 20px;
+}
+
+.cardArea {
+  position: absolute;
+  margin: auto;
+  backdrop-filter: blur(20px);
+  width: 320px;
+  height: 400px;
+  border-radius: 7px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  box-shadow: 20px 20px 22px var(--basicGlassBEffect);
+  background-color: var(--basicGlassAEffect);
+}
+
+.cardImageItem {
+  position: absolute;
+  margin: 30px auto 20px auto;
+  width: 80px;
+  height: 110px;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  background-color: var(--basicGlassAEffect);
+  backdrop-filter: blur(20px);
+}
+
+.cardImageItem img {
+  border-radius: 20px;
+  height: 85%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.descriptionItem {
+  position: absolute;
+  text-align: center;
+  top: 160px;
+  width: 100%;
+}
+
+.descriptionItem h6{
+  color: var(--basicWhiteColor);
+}
+
+.primaryTextItem {
+  margin: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: var(--basicWhiteColor);
+}
+
+.secondaryTextItem {
+  margin: 5px 0;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--basicWhiteColor);
+}
+
+.detailsItem {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 70px;
+  width: 100%;
+  bottom: 0;
+  padding: 5px 0;
+  border-radius: 0 0 8px 8px;
+  backdrop-filter: blur(20px);
+  background-color: var(--basicGlassAEffect);
+}
+
+.detailsItem > div {
+  text-align: center;
+}
+
+.detailsItem > div:first-child {
+  border-right: 2px solid var(--basicGlassBEffect);
+}
+
+button {
+  position: absolute;
+  border: none;
+  width: 80%;
+  top: 240px;
+  left: 10%;
+  padding: 15px 0;
+  border-radius: 5px;
+  backdrop-filter: blur(20px);
+  background-color: var(--basicGlassAEffect);
+}
+
+.donutArea {
+  position: absolute;
+  transition: all 0.6s ease-in-out;
+  bottom: 50px;
+  left: 50px;
+}
+
+.donutArea:hover {
+  transform: scale(1.2);
+}
